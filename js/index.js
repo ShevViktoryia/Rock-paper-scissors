@@ -3,5 +3,5 @@ import playDashboard from "./playDashboard";
 import tabs from "./tabs";
 
 // bgImage();
-tabs();
+// tabs();
 playDashboard();

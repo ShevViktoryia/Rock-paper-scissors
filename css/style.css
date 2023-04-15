@@ -12,7 +12,7 @@ body {
   flex-direction: column;
   opacity: 0.9;
   height: 80vh;
-  width: 60%;
+  width: 80%;
   padding: 20px;
   align-items: center;
   font-size: 16px;
@@ -117,9 +117,72 @@ ul {
   transition: 0.9s;
 }
 
-.stoneImg {
+.playContainer {
   display: flex;
-  width: 300px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+  width: 100%;
+}
+
+.score {
+  display: flex;
+  width: fit-content;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #7ce1f6;
+  cursor: default;
+  font-size: 20px;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  cursor: default;
+}
+
+.imgContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.rockImg, .paperImg, .scissorsImg {
+  display: flex;
+  width: 140px;
   height: 200px;
-  background-size: contain;
+  border: 2px solid #7ce1f6;
+  background: no-repeat center;
+  background-size: cover;
+  border-radius: 5px;
+  background-blend-mode: multiply;
+}
+
+.active {
+  background: center/cover, rgba(131, 237, 92, 0.5);
+}
+
+.lose {
+  background: center/cover, rgba(252, 129, 110, 0.5);
+}
+
+#imgContainer_1 > .rockImg:hover, .paperImg:hover, .scissorsImg:hover {
+  cursor: pointer;
+}
+
+@keyframes blink {  
+  0% { background-color: unset; }
+  100% { background-color: rgba(131, 237, 92, 0.5); }
+}
+
+.blink {
+  animation: blink 0.5s infinite;
+}
+
+.status {
+  margin-top: 10px;
+  font-size: 18px;
+  cursor: default;
 }
