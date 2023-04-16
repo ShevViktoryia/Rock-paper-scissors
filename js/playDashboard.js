@@ -81,9 +81,9 @@ export default function playDashboard() {
       scissorsImg.className = 'scissorsImg';
       scissorsImg.id = 'scissors';
 
-      // getImage('rock', rockImg);
-      // getImage('paper', paperImg);
-      // getImage('scissors', scissorsImg);
+      getImage('rock', rockImg);
+      getImage('paper', paperImg);
+      getImage('scissors', scissorsImg);
 
       imgContainer.append(rockImg);
       imgContainer.append(paperImg);
