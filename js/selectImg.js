@@ -4,8 +4,8 @@ function checkActive(block) {
   block.childNodes.forEach(item => {
     if(item.classList.contains('active')) {
       item.classList.remove('active');
-      item.classList.remove('lose');
     }
+    item.classList.remove('lose');
   });
 }
 export default function selectImg() {

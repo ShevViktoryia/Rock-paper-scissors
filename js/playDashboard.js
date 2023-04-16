@@ -33,7 +33,16 @@ export default function playDashboard() {
 
     const score = document.createElement('div');
     score.className = 'score';
-    score.innerHTML = `${state.player1} : ${state.player2}`;
+    const scorePlayer1 = document.createElement('span');
+    scorePlayer1.className = 'scorePlayer1';
+    scorePlayer1.textContent = 0;
+    const scorePlayer2 = document.createElement('span');
+    scorePlayer2.className = 'scorePlayer2';
+    scorePlayer2.textContent = 0;
+
+    score.append(scorePlayer1);
+    score.innerHTML += "&nbsp;:&nbsp;";
+    score.append(scorePlayer2);
 
     const player1 = document.createElement('div');
     player1.className = 'player';
